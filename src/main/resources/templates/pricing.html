@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pricing</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/general.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+
+        th, td {
+            border: 1px solid black;
+            padding: 0.5em;
+        }
+
+        th {
+            background-color: #f39849;
+            color: white;
+        }
+
+        table {
+            border: 3px solid #f39849;
+            padding: 0.25em;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        #heading-price {
+            text-align: center;
+            font-size: 4em;
+            color: darkorchid;
+            margin-bottom: 1em;
+            font-family: Georgia, sans-serif
+        }
+
+        .heading-order {
+            text-align: center;
+            font-size: 4em;
+            color: darkorchid;
+            margin-bottom: 1em;
+            font-family: Georgia, sans-serif
+        }
+
+        .order-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 3.2rem;
+            row-gap: 2.4rem;
+            border-right: 1em solid #51cf66;
+            padding-right: 3em;
+        }
+
+        .container.order-section {
+            border: 0.5em solid indianred;
+            border-radius: 5em;
+            padding: 2em;
+            background-color: lightblue;
+
+        }
+
+        .form-label {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+        }
+
+        .form-item {
+            width: 100%;
+            padding: 1.2rem;
+            font-size: 1.8rem;
+            font-family: inherit;
+            color: inherit;
+            border: none;
+            background-color: #fdf2e9;
+            border-radius: 9px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-detail {
+            font-size: 3em;
+        }
+
+        .order-label {
+            margin: 0.5em;
+        }
+
+    </style>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+        <img class="logo" alt="Cake o' Clock logo" src="../images/cakeoclock-logo.jpg"/>
+    </a>
+    <nav class="main-nav">
+        <ul id="main-nav-list">
+            <li><a class="main-nav-link" href="birthday.html">Birthday</a></li>
+            <li><a class="main-nav-link" href="anniversary.html">Anniversary</a></li>
+            <li><a class="main-nav-link" href="wedding.html">Wedding</a></li>
+            <li><a class="main-nav-link" href="#">Pricing</a></li>
+            <li><a class="main-nav-link nav-cta" href="review.html">Review</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="section-cake">
+    <h1 id="heading-price">Cake Pricing</h1>
+    <div class="cake" style="grid-template-columns: 1fr; font-size: 3em;">
+        <table>
+            <!--            Chocolate-->
+            <tr>
+                <th>#</th>
+                <th>Cake Name</th>
+                <th>Size</th>
+                <th>Price</th>
+            </tr>
+            <tr style="color: saddlebrown">
+                <td>1</td>
+                <td>Chocolate Cake</td>
+                <td>small</td>
+                <td>$14.99</td>
+            </tr>
+            <tr style="color: saddlebrown">
+                <td>2</td>
+                <td>Chocolate Cake</td>
+                <td>medium</td>
+                <td>$19.98</td>
+            </tr>
+            <tr style="color: saddlebrown">
+                <td>3</td>
+                <td>Chocolate Cake</td>
+                <td>large</td>
+                <td>$24.97</td>
+            </tr>
+            <!--            Vanilla-->
+            <tr style="color: black">
+                <td>4</td>
+                <td>Vanilla Cake</td>
+                <td>small</td>
+                <td>$12.99</td>
+            </tr>
+            <tr style="color: black">
+                <td>5</td>
+                <td>Vanilla Cake</td>
+                <td>medium</td>
+                <td>$17.98</td>
+            </tr>
+            <tr style="color: black">
+                <td>6</td>
+                <td>Vanilla Cake</td>
+                <td>large</td>
+                <td>$22.97</td>
+            </tr>
+            <!--            Strawberry-->
+
+            <tr style="color: indianred">
+                <td>7</td>
+                <td>Strawberry Cake</td>
+                <td>small</td>
+                <td>$18.99</td>
+            </tr>
+            <tr style="color: indianred">
+                <td>8</td>
+                <td>Strawberry Cake</td>
+                <td>medium</td>
+                <td>$23.98</td>
+            </tr>
+            <tr style="color: indianred">
+                <td>9</td>
+                <td>Strawberry Cake</td>
+                <td>large</td>
+                <td>$28.97</td>
+            </tr>
+            <!--            Cheese-->
+
+            <tr style="color: goldenrod">
+                <td>10</td>
+                <td>Cheese Cake</td>
+                <td>small</td>
+                <td>$24.99</td>
+            </tr>
+            <tr style="color: goldenrod">
+                <td>11</td>
+                <td>Cheese Cake</td>
+                <td>medium</td>
+                <td>$29.98</td>
+            </tr>
+            <tr style="color: goldenrod">
+                <td>12</td>
+                <td>Cheese Cake</td>
+                <td>large</td>
+                <td>$34.97</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section class="section-cake">
+    <h1 class="heading-order">Cake Order</h1>
+    <div class="container grid grid--2-cols margin-bottom-md order-section">
+        <form id="order-form" class="order-form">
+
+            <div>
+                <label class="form-label" for="select-type">Select Type</label>
+                <select class="form-item" id="select-type" name="type" required>
+                    <option value="">Please choose a type:</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="straw berry">Strawberry</option>
+                    <option value="vanilla">Vanilla</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="form-label" for="select-size">Select Size</label>
+                <select class="form-item" id="select-size" name="size" required>
+                    <option value="">Please choose a size:</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div>
+                <label class="form-label" for="quantity">Quantity</label>
+                <input
+                        id="quantity"
+                        name="quantity"
+                        type="number"
+                        placeholder="0"
+                        class="form-item"
+                        required
+                />
+            </div>
+
+            <div>
+                <label class="form-label" for="phone">Phone Number</label>
+                <input
+                        id="phone"
+                        type="text"
+                        pattern="(([0-9]{3})\s*|[0-9]{3}-)[0-9]{3}-[0-9]{4}"
+                        name="phone"
+                        placeholder="302-405-5656"
+                        oninput="this.setCustomValidity('')"
+                        oninvalid="this.setCustomValidity('The phone number should be in this format: XXX-XXX-XXXX')"
+                        class="form-item"
+                        required
+                />
+            </div>
+
+            <div>
+                <label class="form-label" for="email">Email address</label>
+                <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="me@example.com"
+                        class="form-item"
+                        required
+                />
+            </div>
+
+
+            <button class="btn btn--form" type="submit">Place Order</button>
+
+            <!-- <input type="checkbox" />
+            <input type="number" /> -->
+        </form>
+        <div class="order-detail">
+            <div class="order-label">
+                <label>Cake Type:</label>
+                <label id="order-type"></label>
+            </div>
+
+            <div class="order-label">
+                <label>Cake Size:</label>
+                <label id="order-size"></label>
+            </div>
+
+            <div class="order-label">
+                <label>Cake Quantity:</label>
+                <label id="order-quantity"></label>
+            </div>
+
+            <div class="order-label">
+                <label>Email:</label>
+                <label id="order-email"></label>
+            </div>
+
+            <div class="order-label">
+                <label>Unit Price:</label>
+                <label id="order-unit-price"></label>
+            </div>
+
+            <div class="order-label">
+                <label>Total:</label>
+                <label id="order-total"></label>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!--<section class="cake-section">-->
+<!--    <div id="content">-->
+<!--        <div id="card" class="card" style="border: 1px solid red" draggable="true" ondragstart="drag(event)">-->
+<!--            <img src="img/person.png" alt="Avatar" style="width:100%">-->
+<!--            <div class="container">-->
+<!--                <h4><b>John Doe</b></h4>-->
+<!--                <p>Architect & Engineer</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<script rel="text/javascript" src="../js/pricing.js"></script>
+</body>
+</html>

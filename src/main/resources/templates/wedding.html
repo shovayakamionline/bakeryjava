@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/general.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        /**************************/
+        /* WEDDING SECTION */
+        /**************************/
+
+        .section-cake-specials {
+            background-color: #fdf2e9;
+            padding: 3rem 0;
+        }
+
+        .cake-special {
+            box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+            border-radius: 11px;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+
+        .cake-special:hover {
+            transform: translateY(-1.2rem);
+            box-shadow: 0 3.2rem 6.4rem rgba(207, 113, 31, 1);
+        }
+
+        .cake-special-content {
+            padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+        }
+
+        .cake-special-tags {
+            margin-bottom: 1.2rem;
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #333;
+            border-radius: 100px;
+            font-weight: 600;
+        }
+
+        .tag--vegetarian {
+            background-color: #51cf66;
+        }
+        .tag--vegan {
+            background-color: #94d82d;
+        }
+        .tag--paleo {
+            background-color: #ffd43b;
+        }
+
+        .cake-special-title {
+            font-size: 2.4rem;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 3.2rem;
+        }
+
+        .cake-special-attributes {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .cake-special-attribute {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+        }
+
+        .cake-special-icon {
+            height: 2.4rem;
+            width: 2.4rem;
+            color: #e67e22;
+        }
+
+        .cake-special-img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+        <img class="logo" alt="Cake o' Clock logo" src="../images/cakeoclock-logo.jpg"/>
+    </a>
+    <nav class="main-nav">
+        <ul id="main-nav-list">
+            <li><a class="main-nav-link" href="birthday.html">Birthday</a></li>
+            <li><a class="main-nav-link" href="anniversary.html">Anniversary</a></li>
+            <li><a class="main-nav-link" href="#">Wedding</a></li>
+            <li><a class="main-nav-link" href="pricing.html">Pricing</a></li>
+            <li><a class="main-nav-link nav-cta" href="review.html">Review</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="section-cake-specials">
+    <div class="container center-text">
+        <span class="subheading">Wedding Special</span>
+        <h2 class="heading-secondary">
+            Cake o' Clock chooses from 1,000+ styles
+        </h2>
+    </div>
+
+    <div class="container grid grid--3-cols margin-bottom-md">
+        <div class="cake-special">
+            <img
+                    src="../images/wedding/wed1.jpg"
+                    class="cake-special-img"
+                    alt="Bride n' Groom Cake"
+            />
+            <div class="cake-special-content">
+                <div class="cake-special-tags">
+                    <span class="tag tag--vegetarian">10% OFF!</span>
+                </div>
+                <p class="cake-special-title">Bride n' Groom Cake</p>
+                <ul class="cake-special-attributes">
+                    <li class="cake-special-attribute">
+                        <ion-icon class="cake-special-icon" name="flame-outline"></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                    </li>
+                    <li class="cake-special-attribute">
+                        <ion-icon class="cake-special-icon" name="star-outline"></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cake-special">
+            <img
+                    src="../images/wedding/wed2.jpg"
+                    class="cake-special-img"
+                    alt="Precious Gold Cake"
+            />
+            <div class="cake-special-content">
+                <div class="cake-special-tags">
+                    <span class="tag tag--vegan">5% OFF!</span>
+                    <span class="tag tag--paleo">Popular</span>
+                </div>
+                <p class="cake-special-title">Precious Gold Cake</p>
+                <ul class="cake-special-attributes">
+                    <li class="cake-special-attribute">
+                        <ion-icon class="cake-special-icon" name="flame-outline"></ion-icon>
+                        <span><strong>400</strong> calories</span>
+                    </li>
+
+                    <li class="cake-special-attribute">
+                        <ion-icon class="cake-special-icon" name="star-outline"></ion-icon>
+                        <span><strong>4.8</strong> rating (441)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cake-special">
+            <img
+                    src="../images/wedding/wed3.jpg"
+                    class="cake-special-img"
+                    alt="Wedding Sash Cake"
+            />
+            <div class="cake-special-content">
+                <div class="cake-special-tags">
+                    <span class="tag tag--vegetarian">15% OFF!</span>
+                </div>
+                <p class="cake-special-title">Wedding Sash Cake</p>
+                <ul class="cake-special-attributes">
+                    <li class="cake-special-attribute">
+                        <ion-icon class="cake-special-icon" name="flame-outline"></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                    </li>
+
+                    <li class="cake-special-attribute">
+                        <ion-icon class="cake-special-icon" name="star-outline"></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cake-special">
+            <img
+                    src="../images/wedding/wed4.jpg"
+                    class="cake-special-img"
+                    alt="Rose-marry Cake"
+            />
+            <div class="cake-special-content">
+                <div class="cake-special-tags">
+                    <span class="tag tag--vegetarian">10% OFF!</span>
+                </div>
+                <p class="cake-special-title">Rose-Marry Cake</p>
+                <ul class="cake-special-attributes">
+                    <li class="cake-special-attribute">
+                        <ion-icon class="cake-special-icon" name="flame-outline"></ion-icon>
+                        <span><strong>650</strong> calories</span>
+                    </li>
+
+                    <li class="cake-special-attribute">
+                        <ion-icon class="cake-special-icon" name="star-outline"></ion-icon>
+                        <span><strong>4.9</strong> rating (537)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

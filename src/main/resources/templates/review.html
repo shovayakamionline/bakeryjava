@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pricing</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../static/general.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+
+        .section-review-cards {
+            background-color: #fdf2e9;
+            padding: 3rem 0;
+        }
+
+        .review-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 3.2rem;
+            row-gap: 2.4rem;
+        }
+
+        .container.order-section {
+            border: 0.5em solid #cf711f;
+            border-radius: 5em;
+            padding: 2em;
+            background-color: lightblue;
+
+        }
+
+        .form-label {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+        }
+
+        .form-item {
+            width: 100%;
+            padding: 1.2rem;
+            font-size: 1.8rem;
+            font-family: inherit;
+            color: inherit;
+            border: none;
+            background-color: #fdf2e9;
+            border-radius: 9px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-card {
+            box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+            border-radius: 11px;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-1.2rem);
+            box-shadow: 0 3.2rem 6.4rem rgba(207, 113, 31, 1);
+        }
+
+        .review-card-content {
+            padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+        }
+
+        .review-card-tags {
+            margin-bottom: 1.2rem;
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #333;
+            border-radius: 100px;
+            font-weight: 600;
+        }
+
+        .tag--5star {
+            background-color: #51cf66;
+            width: 100%;
+        }
+        .tag--4star {
+            background-color: #aad82d;
+            width: 80%;
+        }
+        .tag--3star {
+            background-color: #ffd43b;
+            width: 60%;
+        }
+        .tag--2star {
+            background-color: #ff8d3b;
+            width: 40%;
+        }
+        .tag--1star {
+            background-color: #ff3b3b;
+            width: 20%;
+        }
+
+        .review-card-title {
+            font-size: 2.4rem;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+
+        .review-card-attribute {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+        }
+
+        .review-card-username {
+            font-size: 1.4rem;
+            font-style: italic;
+            display: flex;
+            align-items: end;
+            gap: 1.6rem;
+            margin-top: 1rem;
+            float: right;
+        }
+
+
+    </style>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+        <img class="logo" alt="Cake o' Clock logo" src="../images/cakeoclock-logo.jpg"/>
+    </a>
+    <nav class="main-nav">
+        <ul id="main-nav-list">
+            <li><a class="main-nav-link" href="birthday.html">Birthday</a></li>
+            <li><a class="main-nav-link" href="anniversary.html">Anniversary</a></li>
+            <li><a class="main-nav-link" href="wedding.html">Wedding</a></li>
+            <li><a class="main-nav-link" href="pricing.html">Pricing</a></li>
+            <li><a class="main-nav-link nav-cta" href="#">Review</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="section-review-cards">
+    <div class="container center-text">
+        <span class="subheading">Review</span>
+        <h2 class="heading-secondary">
+            Write Review
+        </h2>
+    </div>
+    <div class="container grid grid--1-cols margin-bottom-md order-section">
+        <form id="review-form" class="review-form">
+
+            <div>
+                <label class="form-label" for="username">User name</label>
+                <input
+                        id="username"
+                        type="text"
+                        name="username"
+                        maxlength="20"
+                        placeholder="Username"
+                        class="form-item"
+                        required
+                />
+            </div>
+            <div>
+                <label class="form-label" for="title">Title</label>
+                <input
+                        id="title"
+                        type="text"
+                        name="title"
+                        maxlength="15"
+                        placeholder="Title"
+                        class="form-item"
+                        required
+                />
+            </div>
+            <div>
+                <label class="form-label" for="select-type">Rating</label>
+                <select class="form-item" id="select-type" name="rating" required>
+                    <option value="">Please choose a rating:</option>
+                    <option value="1">One star</option>
+                    <option value="2">Two stars</option>
+                    <option value="3">Three stars</option>
+                    <option value="4">Four stars</option>
+                    <option value="5">Five stars</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="form-label" for="reviewText">Review text</label>
+                <textarea
+                        id="reviewText"
+                        name="reviewText"
+                        placeholder="Your review text goes here"
+                        class="form-item"
+                        rows="4"
+                        cols="50"
+                        maxlength="100"
+                        required
+                ></textarea>
+            </div>
+
+            <button class="btn btn--form" type="submit">Submit</button>
+        </form>
+
+    </div>
+</section>
+
+<section class="section-review-cards">
+    <div id="review-container" class="container grid grid--3-cols margin-bottom-md">
+        <div id="review-card" class="review-card">
+            <div class="review-card-content">
+                <div class="review-card-tags">
+                    <span class="tag tag--5star">5</span>
+                </div>
+                <p class="review-card-title">Beautiful...</p>
+                <p class="review-card-attribute">Awesome cake decoration. Very good service. I would recommend.</p>
+                <p class="review-card-username">- Anonymous</p>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="review-card-content">
+                <div class="review-card-tags">
+                    <span class="tag tag--4star">4</span>
+                </div>
+                <p class="review-card-title">Great Service</p>
+                <p class="review-card-attribute">The cake was delivered just on time. The cake was amazing though.</p>
+                <p class="review-card-username">- Roshan</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<script rel="text/javascript" src="../js/review.js"></script>
+</body>
+</html>
