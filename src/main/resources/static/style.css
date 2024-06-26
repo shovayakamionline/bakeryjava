@@ -127,13 +127,20 @@
     }
 }
 
-@media (max-width: 30em) {
+@media (max-width: 39em) {
     html {
-        /* 8px / 16px = 0.5 = 50% */
         font-size: 25%;
     }
-
     .cake {
         max-width: 90rem;
+    }
+}
+
+@media (max-width: 19em) {
+    html {
+        font-size: 13%;
+    }
+    .cake {
+        max-width: 70rem;
     }
 }
