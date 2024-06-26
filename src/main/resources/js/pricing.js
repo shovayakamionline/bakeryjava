@@ -22,8 +22,8 @@ function processOrder(e) {
     document.getElementById("order-size").innerHTML = size;
     document.getElementById("order-quantity").innerHTML = quantity;
     document.getElementById("order-email").innerHTML = orderDetail["email"]
-    document.getElementById("order-unit-price").innerHTML = unitPrice
-    document.getElementById("order-total").innerHTML = total;
+    document.getElementById("order-unit-price").innerHTML = '$'+ unitPrice
+    document.getElementById("order-total").innerHTML = '$'+ total;
     console.log(orderDetail);
 
 }
