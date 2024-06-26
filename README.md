@@ -13,4 +13,4 @@
 ### Repository
  Here is the link to my GitHub account: https://github.com/shovayakamionline/bakeryjava
 ### Project Page
- Here is the link to my project page, hosted in GitHub: https://shovayakamionline.github.io/bakery/index.html
+ Here is the link to my project page, hosted in GitHub: https://shovayakamionline.github.io/bakeryjava/src/main/resources/templates/index.html
